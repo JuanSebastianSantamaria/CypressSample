@@ -23,16 +23,6 @@ describe('My First Cypress Test Suite', {viewportHeight: 947, viewportWidth: 192
         cy.get('#item-4').click();
         cy.get('.mt-4:nth-child(3) button').click();
         cy.get('#dynamicClickMessage').should('be.visible');
-        /**
-         * Changes the scope in the DOM to do something with multiple elements
-         * cy.get('#searchBox').within(() => {
-         *      cy.get('input').type('Cucumber') // Only searches inputs within searchBox
-         *      cy.get('div').type('Cucumber') // Only searches divs within searchBox
-         * })
-         * 
-         * Changes the scope in the DOM to do something only with 1 element
-         * cy.get('.demo-frame > ul > li').find('[href*=keyboard]').should('have.length',2);
-         */
     })
 
     it('Validate that links under the elements section are working', () => {
@@ -44,5 +34,10 @@ describe('My First Cypress Test Suite', {viewportHeight: 947, viewportWidth: 192
         //Changes the scope in the DOM to do something only with 1 element
         cy.get('#linkWrapper').find('p a').eq(3).click();
         cy.get('#linkResponse').should('have.text', 'Link has responded with staus 204 and status text No Content');
+        //Changes the scope in the DOM to do something with multiple elements
+        cy.get('#linkWrapper').within(() => {
+            cy.get('p a').eq(4).click();
+            cy.get('#linkResponse').should('have.text', 'Link has responded with staus 301 and status text Moved Permanently');
+        })
     });
 })
