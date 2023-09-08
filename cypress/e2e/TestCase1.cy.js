@@ -1,5 +1,4 @@
 /**
- * My first test case in cypress
  * Tutorial links:
  * https://toolsqa.com/cypress-tutorial/
  * https://docs.cypress.io/guides/end-to-end-testing/testing-your-app
@@ -11,6 +10,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // failing the test
     return false
 })
+
+//Test cases for the page: https://demoqa.com/
 
 describe('My First Cypress Test Suite', {viewportHeight: 947, viewportWidth: 1920}, () => {
 
@@ -32,12 +33,26 @@ describe('My First Cypress Test Suite', {viewportHeight: 947, viewportWidth: 192
         cy.get('p a').eq(2).click();
         cy.get('#linkResponse').should('have.text', 'Link has responded with staus 201 and status text Created');
         //Changes the scope in the DOM to do something only with 1 element
-        cy.get('#linkWrapper').find('p a').eq(3).click();
+        cy.get('#linkWrapper').find('a').eq(3).click();
         cy.get('#linkResponse').should('have.text', 'Link has responded with staus 204 and status text No Content');
         //Changes the scope in the DOM to do something with multiple elements
         cy.get('#linkWrapper').within(() => {
-            cy.get('p a').eq(4).click();
+            cy.get('a').eq(4).click();
             cy.get('#linkResponse').should('have.text', 'Link has responded with staus 301 and status text Moved Permanently');
+            cy.get('a').eq(5).click();
+            cy.get('#linkResponse').should('have.text', 'Link has responded with staus 400 and status text Bad Request');
+            cy.get('a').eq(6).click();
+            cy.get('#linkResponse').should('have.text', 'Link has responded with staus 401 and status text Unauthorized');
+            cy.get('a').eq(7).click();
+            cy.get('#linkResponse').should('have.text', 'Link has responded with staus 403 and status text Forbidden');
+            cy.get('a').eq(8).click();
+            cy.get('#linkResponse').should('have.text', 'Link has responded with staus 404 and status text Not Found');
         })
+    });
+
+    it('Check/Uncheck all the elements and validate their status', () => {
+        cy.xpath('//h5[text()="Elements"]').click();
+        cy.get('#item-1').click();
+        cy.xpath('//span[text()="Home"]').parent().parent().find('button').click();
     });
 })
