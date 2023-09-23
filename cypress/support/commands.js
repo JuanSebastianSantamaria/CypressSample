@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const loginPage = require("../pagesSauceDemo/loginPage")
+
+Cypress.Commands.add('login', (username, password) => {
+    loginPage.elements.usernameField().type(username);
+    loginPage.elements.passwordField().type(password);
+    loginPage.elements.loginButton().click();
+})

@@ -4,7 +4,8 @@
   "description": "cypress automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cyopen": "cypress open",
+    "cyrun" : "cypress run"
   },
   "author": "JS",
   "license": "ISC",
