@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "cyopen": "cypress open",
-    "cyrun" : "cypress run"
+    "cyrun": "cypress run"
   },
   "author": "JS",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.0.0"
+    "cypress": "^13.0.0",
+    "cypress-mochawesome-reporter": "^3.6.0"
   },
   "dependencies": {
     "cypress-xpath": "^2.0.1"
