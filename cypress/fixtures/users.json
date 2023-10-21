@@ -1,0 +1,162 @@
+[
+  {
+    "userName": "Blazy",
+    "lastName": "Phoenix",
+    "email": "blazy69@gmail.com",
+    "age": "22",
+    "salary": "2500",
+    "department": "Psychology"
+  },
+  {
+    "userName": "Bella",
+    "lastName": "Nguyen",
+    "email": "bella09@gmail.com",
+    "age": "22",
+    "salary": "15000",
+    "department": "IT monitoring"
+  },
+  {
+    "userName": "Beryl",
+    "lastName": "Muradova",
+    "email": "beryl@gmail.com",
+    "age": "24",
+    "salary": "1000",
+    "department": "Law"
+  },
+  {
+    "userName": "Daniel",
+    "lastName": "Beltran",
+    "email": "danielb@gmail.com",
+    "age": "80",
+    "salary": "150000",
+    "department": "Architect"
+  },
+  {
+    "userName": "Cristine",
+    "lastName": "Cruz",
+    "email": "criscruz@gmail.com",
+    "age": "24",
+    "salary": "10000",
+    "department": "Security"
+  },
+  {
+    "userName": "Matt",
+    "lastName": "Ribeiro",
+    "email": "mattzinho@gmail.com",
+    "age": "28",
+    "salary": "12000",
+    "department": "Development"
+  },
+  {
+    "userName": "Francis",
+    "lastName": "Costa",
+    "email": "fcosta@gmail.com",
+    "age": "31",
+    "salary": "12345",
+    "department": "Technology"
+  },
+  {
+    "userName": "Lorraine",
+    "lastName": "Mendoza",
+    "email": "rainy@gmail.com",
+    "age": "25",
+    "salary": "8500",
+    "department": "Medicine"
+  },
+  {
+    "userName": "Nemo",
+    "lastName": "Garcia",
+    "email": "alquen@gmail.com",
+    "age": "50",
+    "salary": "12500",
+    "department": "Geology"
+  },
+  {
+    "userName": "Mahbuba",
+    "lastName": "Cricket",
+    "email": "mcricket@gmail.com",
+    "age": "15",
+    "salary": "500",
+    "department": "Art"
+  },
+  {
+    "userName": "Blazy",
+    "lastName": "Phoenix",
+    "email": "blazy69@gmail.com",
+    "age": "22",
+    "salary": "2500",
+    "department": "Psychology"
+  },
+  {
+    "userName": "Bella",
+    "lastName": "Nguyen",
+    "email": "bella09@gmail.com",
+    "age": "22",
+    "salary": "15000",
+    "department": "IT monitoring"
+  },
+  {
+    "userName": "Beryl",
+    "lastName": "Muradova",
+    "email": "beryl@gmail.com",
+    "age": "24",
+    "salary": "1000",
+    "department": "Law"
+  },
+  {
+    "userName": "Daniel",
+    "lastName": "Beltran",
+    "email": "danielb@gmail.com",
+    "age": "80",
+    "salary": "150000",
+    "department": "Architect"
+  },
+  {
+    "userName": "Cristine",
+    "lastName": "Cruz",
+    "email": "criscruz@gmail.com",
+    "age": "24",
+    "salary": "10000",
+    "department": "Security"
+  },
+  {
+    "userName": "Matt",
+    "lastName": "Ribeiro",
+    "email": "mattzinho@gmail.com",
+    "age": "28",
+    "salary": "12000",
+    "department": "Development"
+  },
+  {
+    "userName": "Francis",
+    "lastName": "Costa",
+    "email": "fcosta@gmail.com",
+    "age": "31",
+    "salary": "12345",
+    "department": "Technology"
+  },
+  {
+    "userName": "Lorraine",
+    "lastName": "Mendoza",
+    "email": "rainy@gmail.com",
+    "age": "25",
+    "salary": "8500",
+    "department": "Medicine"
+  },
+  {
+    "userName": "Nemo",
+    "lastName": "Garcia",
+    "email": "alquen@gmail.com",
+    "age": "50",
+    "salary": "12500",
+    "department": "Geology"
+  },
+  {
+    "userName": "Mahbuba",
+    "lastName": "Cricket",
+    "email": "mcricket@gmail.com",
+    "age": "15",
+    "salary": "500",
+    "department": "Art"
+  }
+]
