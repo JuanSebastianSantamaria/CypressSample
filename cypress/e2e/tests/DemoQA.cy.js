@@ -16,10 +16,10 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 //Test cases for the page: https://demoqa.com/
 
-describe('My First Cypress Test Suite', {viewportHeight: 947, viewportWidth: 1920}, () => {
+describe('Elements Module Suite', {viewportHeight: 947, viewportWidth: 1920}, () => {
 
     beforeEach(() => {
-        cy.visit("https://demoqa.com/");
+        cy.visit(Cypress.env('DemoQAbaseUrl'));
     });
 
     it('Clicks on a button that shows a message', () => {

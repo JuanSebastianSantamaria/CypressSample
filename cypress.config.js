@@ -10,6 +10,9 @@ module.exports = defineConfig({
     saveAllAttempts: false,
     reportDir: 'cypress/report'
   },
+  env: {
+    DemoQAbaseUrl: 'https://demoqa.com/',
+  },
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
